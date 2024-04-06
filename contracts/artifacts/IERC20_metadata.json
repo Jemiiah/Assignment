@@ -1,0 +1,219 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for the ERC20 token standard, providing methods for token transfer, approval, allowance, and balance query.",
+			"kind": "dev",
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Returns the amount of tokens that `spender` is allowed to spend on behalf of `owner`.",
+					"params": {
+						"owner": "The address of the token owner.",
+						"spender": "The address of the spender."
+					},
+					"returns": {
+						"_0": "The amount of tokens that `spender` is allowed to spend on behalf of `owner`."
+					}
+				},
+				"approve(address,uint256)": {
+					"details": "Approves `spender` to spend up to `value` tokens on behalf of the caller.",
+					"params": {
+						"spender": "The address allowed to spend the tokens.",
+						"value": "The maximum amount of tokens that can be spent."
+					},
+					"returns": {
+						"_0": "A boolean indicating whether the approval was successful."
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Returns the balance of the specified `account`.",
+					"params": {
+						"account": "The address of the account to query the balance of."
+					},
+					"returns": {
+						"_0": "The balance of the specified account."
+					}
+				},
+				"transfer(address,uint256)": {
+					"details": "Transfers `value` amount of tokens from the caller's account to the recipient `to`.",
+					"params": {
+						"to": "The address of the recipient to which the tokens will be transferred.",
+						"value": "The amount of tokens to transfer."
+					},
+					"returns": {
+						"_0": "A boolean indicating whether the transfer was successful."
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfers `value` amount of tokens from the `from` address to the `to` address using the allowance mechanism.",
+					"params": {
+						"from": "The address from which the tokens will be transferred.",
+						"to": "The address to which the tokens will be transferred.",
+						"value": "The amount of tokens to transfer."
+					},
+					"returns": {
+						"_0": "A boolean indicating whether the transfer was successful."
+					}
+				}
+			},
+			"title": "IERC20 Interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicERC20.sol": "IERC20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicERC20.sol": {
+			"keccak256": "0x2f6b457b18a82d9b5f19ee7ad8cbc10663841ad96e672349b56cc224d0b46a01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c961bfbcb37cf7b836779e30f7351b24f651fd1fa7d8a48d074e33411a9006d1",
+				"dweb:/ipfs/QmauXTvx7k7W2ksnQHEjvDLyg3ZXutBauFA9L7nxRD1NfU"
+			]
+		}
+	},
+	"version": 1
+}
